@@ -9,6 +9,21 @@ html body {
     height: 100%;
 }
 
+
+a {
+    transition: color 2s ease, letter-spacing 2s ease;
+    text-decoration: none;
+
+    &:visited {
+        color: purple;
+        letter-spacing: 1px;
+    }
+    &:hover {
+        color: blue;
+        letter-spacing: 10px;       
+    }
+}
+
 .title {
     font-size: 350%;
     text-align: center;
@@ -17,9 +32,68 @@ html body {
     margin: 20px;
 }
 
+.spaced {
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    font-size: 250%;
+    border-bottom: 3px solid white;
+    border-radius: 10%;
+    letter-spacing: 1px;
+    transition: letter-spacing 4s ease;
+    -webkit-transition: letter-spacing 4s ease;
+    -moz-transition: letter-spacing 4s ease;
+    -ms-transition: letter-spacing 4s ease;
+    -o-transition: letter-spacing 4s ease;
+    /*https:;
+    //giphy.com/gifs/trapcode-particular-looped-animation-z2POQZ2t8s5Gzp4C7rcreditforbackgroundvideohttps:;
+    //css-tricks.com/lets-look-50-interesting-css-properties-values/whereIfoundtheideaandhowtodoit*/
+    &:hover {
+        letter-spacing: 30px;
+        background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGVibzc4bXZ3N2x3MmMyc3dyMThicng3aGE1bWMwZXd4dzRxemdobyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z2POQZ2t8s5Gzp4C7r/giphy.gif);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        box-sizing: border-box;
+        background-clip: text;  
+    }
+}
+
+.portfolio {
+    transition: transform 5s ease;
+    -webkit-transition: transform 5s ease;
+    -moz-transition: transform 5s ease;
+    -ms-transition: transform 5s ease;
+    -o-transition: transform 5s ease;
+    transform: rotate(-60deg);
+    -webkit-transform: rotateY(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    &:hover{
+        transform: rotateY(60deg);
+        -webkit-transform: rotateY(60deg);
+        -moz-transform: rotateY(60deg);
+        -ms-transform: rotateY(60deg);
+        -o-transform: rotateY(60deg);
+}
+}
+
+
 .mainPhoto {
     width: 400px;
     height: auto;
+    transition: width 3s ease, height 3s ease-in;
+    -webkit-transition: width 3s ease, height 3s ease-in;
+    -moz-transition: width 3s ease, height 3s ease-in;
+    -ms-transition: width 3s ease, height 3s ease-in;
+    -o-transition: width 3s ease, height 3s ease-in;
+    &:hover {
+        width: 450px;
+        height: auto;
+    }
+
 }
 
 .name {
@@ -31,6 +105,57 @@ html body {
    border-right: none;
    border-left: none;
    margin: 15px;
+   letter-spacing: 1px;
+   transition: letter-spacing 2s ease;
+   -webkit-transition: letter-spacing 2s ease;
+   -moz-transition: letter-spacing 2s ease;
+   -ms-transition: letter-spacing 2s ease;
+   -o-transition: letter-spacing 2s ease;
+   &:hover {
+    letter-spacing: 8px;
+   }
+}
+
+.footer {
+    font-weight: bold;
+    font-size: 250%;
+    text-align: center;
+    margin: 15px;
+    letter-spacing: 1px;
+    border-top: 3px solid white;
+    border-radius: 10%;
+    transition: letter-spacing 2s ease;
+    -webkit-transition: letter-spacing 2s ease;
+    -moz-transition: letter-spacing 2s ease;
+    -ms-transition: letter-spacing 2s ease;
+    -o-transition: letter-spacing 2s ease;
+    &:hover {
+     letter-spacing: 3px;
+    }
+ }
+
+.project {
+    font-weight: bolder;
+    font-size: 250%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    margin: 1px;
+    transition: letter-spacing 2s ease;
+    -webkit-transition: letter-spacing 2s ease;
+    -moz-transition: letter-spacing 2s ease;
+    -ms-transition: letter-spacing 2s ease;
+    -o-transition: letter-spacing 2s ease;
+    &:hover {
+        /* https://giphy.com/ericaofanderson maker of background */
+        letter-spacing: 5px;
+        background: url(https://media.giphy.com/media/3ohs4ucXR6NYRxmpTa/giphy.gif?cid=790b7611m5vw3bnfviohjk2v9pbpz0vfkqf6nenwplyjrfyg&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        box-sizing: border-box;
+        background-clip: text;  
+    }
 }
 
 .quote {
@@ -53,9 +178,9 @@ html body {
 .verticalText {
     background-color: white;
     color: black;
-    writing-mode: vertical-lr;
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 30px;
     letter-spacing: 2px;
@@ -65,19 +190,7 @@ html body {
     -o-transform: rotate(180deg);
 }
 
-a:hover {
-    color: red;
-    text-decoration: none;
-    font-style: oblique;
-}
 
-
-
-.name:hover {
-    color: crimson;
-    font-style: italic;
-    text-decoration: line-through double 2px;
-}
 
 .containerColumn {
     display: flex;
@@ -93,29 +206,51 @@ a:hover {
     flex-direction: row;
 }
 
+.portfolioArranger {
+
+    .card {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+
 .surprise {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    transition: background-color 2s ease, color 2s ease;
+    -webkit-transition: background-color 2s ease, color 2s ease;
+    -moz-transition: background-color 2s ease, color 2s ease;
+    -ms-transition: background-color 2s ease, color 2s ease;
+    -o-transition: background-color 2s ease, color 2s ease;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+    &:hover .title {
+        background-color: white;
+        color: black;
+        transition: background-color 2s ease, color 2s ease;
+        -webkit-transition: background-color 2s ease, color 2s ease;
+        -moz-transition: background-color 2s ease, color 2s ease;
+        -ms-transition: background-color 2s ease, color 2s ease;
+        -o-transition: background-color 2s ease, color 2s ease; 
+    }
+
+    .title {
+        background-color: inherit;
+    }
+
+    .hiddenText {
+        color: black;
+    }
 }
+
 
 #indexFormat {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     min-height: 100vh;
-}
-
-.surprise:hover {
-    background-color: white;
-    color: black;
-}
-
-.surprise:hover .title {
-    background-color: white;
-    color: black;
-}
-
-.hiddenText {
-    color: black;
 }
 
 #nameText {
@@ -133,3 +268,37 @@ a:hover {
     -o-border-radius: 3px;
     margin: 30px;
 }
+
+.decorativePhoto {
+    height: 400px;
+    width: 90%;
+    margin-bottom: 20px;
+
+    &:hover {
+        animation: tilt-shaking 3s;
+        -webkit-animation: tilt-shaking 3s;
+        animation-iteration-count: infinite;
+}
+}
+
+.description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+    font-size: 100%;
+    line-height: 110%;
+    letter-spacing: 1.5px;
+}
+
+
+/* https://unused-css.com/blog/css-shake-animation/ credit for shaking animation */
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+
