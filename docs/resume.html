@@ -5,51 +5,98 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/stylesheet.css">
     </head>
-    <header>
-        <nav>
-            <a href="index.html">Home Page</a>
-            <a href="portfolio.html">Portfolio Page</a>
-            <a href="resume.html">Resume Page</a>
-        </nav>
-    </header>
     <body>
-        <h1>Resume Page</h1>
-        <section>
-            <h2>Software Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>C</li>
-                <li>RiSC-V Assembly</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Hardware Skills</h2>
-            <ul>
-                <li>Verilog</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Past Work Experience</h2>
-            <ul>
-                <li>None</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>Coal City Highschool. 2020-24</li>
-                <li>Rose-Hulman Institute of Technology: BS in Software Engineering. 2024-Now</li>
-            </ul>
-        </section>
+        <div id="indexFormat">
+            <nav class="sideBar containerRow">
+                <a href="index.html" class="verticalText">Home Page</a>
+                <a href="portfolio.html" class="verticalText">Portfolio Page</a>
+                <a href="resume.html" class="verticalText">Resume Page</a>
+            </nav>
 
+            <div>
+                <h1 class="title spaced resume">-~-RESUME-~-</h1>
+                    <section>
+                        <h2 class="title subtitle spaced">Software Skills</h2>
+                            
+                            <div class="containerRow portfolioArranger resumeArranger">
+                                <div class="card">
+                                        <h3 class="project resumeTitle">PYTHON</h3>
+                                        <img src="images/Python.jpg" alt="Python logo" class="resumePictures">
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">JAVA</h3>
+                                    <img src="images/Java.jpg" alt="Java logo" class="resumePictures">
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">HTML</h3>
+                                    <img src="images/HTML.jpg" alt="HTML logo" class="resumePictures">
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">CSS</h3>
+                                    <img src="images/CSS.jpg" alt="CSS logo" class="resumePictures">
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">JS</h3>
+                                    <img src="images/JS.jpg" alt="JS logo" class="resumePictures">
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">C</h3>
+                                    <img src="images/C.jpg" alt="C logo" class="resumePictures">
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">RiSC-V</h3>
+                                    <img src="images/Risc-V.jpg" alt="RiSC-V logo" class="resumePictures">
+                                </div> 
+                            </div>
+                    </section>
+                    <section>
+                        <h2 class="title subtitle spaced">Hardware Skills</h2>
+                            <div class="containerRow portfolioArranger">
+                                <div class="card">
+                                        <h3 class="project resumeTitle">VERILOG</h3>
+                                        <img src="images/Verilog.jpg" alt="Verilog logo" class="resumePictures">
+                                </div>
+                            </div>
+                    </section>
+                    <section>
+                        <h2 class="title subtitle spaced">Past Work Experience</h2>
+                            <div class="containerRow portfolioArranger">
+                                <div class="card">
+                                        <h3 class="project resumeTitle">NONE</h3>
+                                        <img src="images/placeholder.jpg" alt="Placeholder" class="resumePictures">
+                                </div>
+                            </div>
+                    </section>
+                    <section>
+                        <h2 class="title subtitle spaced">Education</h2>
+                            <div class="containerRow portfolioArranger">
+                                <div class="card">
+                                        <h3 class="project resumeTitle">CCHS</h3>
+                                        <img src="images/CCHS.jpg" alt="Coal City High School Building" class="resumePictures">
+                                        <p class="description">Coal City High School. 2020-24</p>
+                                </div>
+                                <div class="card">
+                                    <h3 class="project resumeTitle">RHIT</h3>
+                                    <img src="images/Rose.jpg" alt="Rose Hulman Union Building" class="resumePictures">
+                                    <p class="description">Rose Hulman Institute of Technology. 2024-Now. BS in Software Engineering</p>
+                                </div>
+                            </div>
+                        <h2 class="title subtitle spaced">Download my Resume!</h2>
+                            <div class="card">
+                                <h3 class="project resumeTitle">CLICK BELOW</h3>
+                                <div class="containerRow">
+                                    <!-- https://www.w3schools.com/howto/howto_css_download_button.asp heres where I learned to make a download button -->
+                                    <a href="Dom's Resume.docx" download="Resume">
+                                        <img src="images/download.png" alt="Download Button" style="width: 100px; height: auto">
+                                    </a>
+                                </div>
+                            </div>
+                    </section>
+            </div>
+
+            <nav class="sideBar containerRow">
+                <a href="https://rose-hulman.joinhandshake.com/profiles/hqz5ys" target="_blank" class="verticalText">My Handshake</a>
+            </nav>
+        </div> 
     </body>
-    <footer>
-        <nav>
-            <a href="https://rose-hulman.joinhandshake.com/profiles/hqz5ys" target="_blank">My Handshake</a>
-        </nav>
-    </footer>
 </html>

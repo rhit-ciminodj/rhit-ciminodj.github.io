@@ -48,7 +48,7 @@ a {
     -o-transition: letter-spacing 4s ease;
     /*https:;
     //giphy.com/gifs/trapcode-particular-looped-animation-z2POQZ2t8s5Gzp4C7rcreditforbackgroundvideohttps:;
-    //css-tricks.com/lets-look-50-interesting-css-properties-values/whereIfoundtheideaandhowtodoit*/
+    //css-tricks.com/lets-look-50-interesting-css-properties-values/whereIfoundtheideaandhowtodoit here is where I learned how to do cool background gif trick*/
     &:hover {
         letter-spacing: 30px;
         background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGVibzc4bXZ3N2x3MmMyc3dyMThicng3aGE1bWMwZXd4dzRxemdobyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z2POQZ2t8s5Gzp4C7r/giphy.gif);
@@ -149,7 +149,7 @@ a {
     &:hover {
         /* https://giphy.com/ericaofanderson maker of background */
         letter-spacing: 5px;
-        background: url(https://media.giphy.com/media/3ohs4ucXR6NYRxmpTa/giphy.gif?cid=790b7611m5vw3bnfviohjk2v9pbpz0vfkqf6nenwplyjrfyg&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+        background: url(https://media.giphy.com/media/5kFbMBOEdWjg1nItoG/giphy.gif?cid=790b7611giw7m5cha0r906g7nltkby2rmqofaj1gl9c74hag&ep=v1_gifs_search&rid=giphy.gif&ct=g);
         background-size: cover;
         background-position: center;
         color: transparent;
@@ -270,7 +270,7 @@ a {
 }
 
 .decorativePhoto {
-    height: 400px;
+    height: 300px;
     width: 90%;
     margin-bottom: 20px;
 
@@ -279,6 +279,24 @@ a {
         -webkit-animation: tilt-shaking 3s;
         animation-iteration-count: infinite;
 }
+}
+
+.resumePictures {
+    height: 250px;
+    width: auto;
+    margin-bottom: 20px;
+    border: 5px solid blue;
+    transition: border-color 2s ease;
+    -webkit-transition: border-color 2s ease;
+    -moz-transition: border-color 2s ease;
+    -ms-transition: border-color 2s ease;
+    -o-transition: border-color 2s ease;
+    &:hover     {   
+        border-color: blueviolet;
+        animation: tilt-shaking 3s;
+        -webkit-animation: tilt-shaking 3s;
+        animation-iteration-count: infinite;
+    }
 }
 
 .description {
@@ -291,6 +309,35 @@ a {
     letter-spacing: 1.5px;
 }
 
+.resume {
+    letter-spacing: 2px;
+    color: white;
+    transition: letter-spacing 3s ease, color 3s ease, font-size 3s ease;
+    -webkit-transition: letter-spacing 3s ease, color 3s ease, font-size 3s ease;
+    -moz-transition: letter-spacing 3s ease, color 3s ease, font-size 3s ease;
+    -ms-transition: letter-spacing 3s ease, color 3s ease, font-size 3s ease;
+    -o-transition: letter-spacing 3s ease, color 3s ease, font-size 3s ease;
+    &:hover {
+        letter-spacing: 20px;
+        color: blueviolet;
+        font-size: 500%;
+    }
+}
+
+
+/* https://www.w3schools.com/css/css_text_shadow.asp here is where I learned text shadows */
+.resumeTitle {
+    text-shadow: 2px 2px 4px red,
+                 3px 3px 5px violet;
+    &:hover {
+        text-shadow: none;
+    }
+}
+
+.resumeArranger {
+    flex-wrap: wrap;
+}
+
 
 /* https://unused-css.com/blog/css-shake-animation/ credit for shaking animation */
 @keyframes tilt-shaking {
@@ -298,7 +345,7 @@ a {
     25% { transform: rotate(5deg); }
     50% { transform: rotate(0eg); }
     75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
   }
 
 
